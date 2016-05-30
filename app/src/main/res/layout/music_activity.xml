@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgPrimary"
+    tools:context=".MusicActivity">
+
+    <FrameLayout
+        android:id="@+id/innerPlayRoot"
+        android:layout_width="match_parent" android:layout_height="0dp"
+                 app:layout_heightPercent="10%"
+                 android:background="@color/RED"
+                 android:layout_alignParentBottom="true"
+    ></FrameLayout>
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/clCoordinator"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_above="@id/innerPlayRoot"
+
+    >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/ablAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarMenOverlay"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:navigationIcon="@drawable/ic_drawer"
+
+
+                app:title="">
+
+                <FrameLayout
+                    android:id="@+id/tab"
+                    android:layout_width="match_parent"
+                             android:layout_height="48dp">
+
+
+                </FrameLayout>
+
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ablAppBar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prvRoot"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/intro_one"
+    />
+
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:text="本应用由爱吃鹌鹑蛋倾情提供@"
+        android:textColor="?attr/textLightPrimary"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_heightPercent="10%"
+        android:layout_alignParentBottom="true"
+    />
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prvRootPoster"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:clickable="true"
+    >
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

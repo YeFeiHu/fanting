@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/GREEN_PRIMARY</item>
+        <item name="colorPrimaryDark">@color/GREEN_DARK_PRIMARY</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="bgDarkPrimary" >@color/GREEN_DARK_PRIMARY</item>
+        <item name="bgPrimary" >@color/GREEN_PRIMARY</item>
+        <item name="bgSecondary" >@color/GREEN_SECONDARY</item>
+        <item name="bgLrghtPrimary" >@color/GREEN_LIGHT_PARMARY</item>
+
+
+        <item name="btPrimary" >@color/RED</item>
+
+        <item name="textDarkPrimary" >@color/TEXT_DARK_PRIMARY</item>
+        <item name="textPrimary" >@color/TEXT_PRIMARY</item>
+        <item name="textSecondary" >@color/TEXT_SECONDARY</item>
+        <item name="textMinorPrimary" >@color/TEXT_MINOR_PARMARY</item>
+        <item name="textLightPrimary" >@color/TEXT_LIGHT_PARMARY</item>
+
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+
+
+    </style>
+
+
+
+
+    <style name="AppTheme.AppBarMenOverlay" parent="AppTheme.AppBarOverlay">
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <!-- 左边的箭头指示-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@android:color/tertiary_text_dark</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+
+
+
+</resources>

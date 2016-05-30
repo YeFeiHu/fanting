@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@id/rlRoot"
+                android:background="@color/RED"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="left|top"
+        android:text=""
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+    />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@id/rivPoster"
+        android:src="@drawable/intro_one"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="2dip"
+        app:riv_border_width="0dip"
+        app:riv_border_color="@color/RED"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="clamp"
+        app:riv_oval="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="60%"
+        android:layout_below="@id/tvTitle"
+
+    />
+
+
+    <View android:layout_width="match_parent" android:layout_height="0dp"
+          android:background="@android:color/transparent"
+          android:layout_alignParentBottom="true"
+          android:id="@+id/black"
+          app:layout_heightPercent="10%">
+
+    </View>
+
+
+    <TextView
+        android:id="@id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="left|top"
+        android:background="#44ff0000"
+        android:text="text"
+        app:layout_heightPercent="20%"
+        android:gravity="center"
+        android:layout_above="@id/black"
+        android:layout_below="@id/rivPoster"
+
+    />
+
+</android.support.percent.PercentRelativeLayout>

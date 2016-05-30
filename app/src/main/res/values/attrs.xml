@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //背景颜色或资源
+    <attr name="bgDarkPrimary" format="color|reference"></attr>
+    <attr name="bgPrimary" format="color|reference"></attr>
+    <attr name="bgSecondary" format="color|reference"></attr>
+    <attr name="bgLrghtPrimary" format="color|reference"></attr>
+
+
+    //按钮颜色
+    <attr name="btPrimary" format="color|reference"></attr>
+
+
+    //text 颜色
+    <attr name="textDarkPrimary" format="color|reference"></attr>
+    <attr name="textPrimary" format="color|reference"></attr>
+    <attr name="textSecondary" format="color|reference"></attr>
+    <attr name="textMinorPrimary" format="color|reference"></attr>
+    <attr name="textLightPrimary" format="color|reference"></attr>
+
+
+
+
+</resources>

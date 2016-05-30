@@ -1,0 +1,15 @@
+ function() {
+        var imgs = document.getElementsByTagName('img');
+        for(var i =0; i < imgs.length; i++) {
+            imgs[i].addEventListener('mousedown', function() {
+                    window.imagelistner.onDown(this.src);
+                    }, false);
+            imgs[i].addEventListener('mousemove',function(){
+                    window.imagelistner.onMove(this.src)
+                    },false);
+
+            imgs[i].addEventListener('mouseout',function(){
+                    window.imagelistner.onUp(this.src);
+                    },false);
+        }
+    }
